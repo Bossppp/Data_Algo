@@ -7,7 +7,7 @@ void splitList(list<T>& list1, list<T>& list2) {
         mHeader->next->prev = list1.mHeader->prev;
         node* n1 = mHeader->next; //ควรสร้างไว้กันแตก
         for(int i = 0; i < num1; i++){
-            n1 = n->next;
+            n1 = n1->next;
         }
         n1->prev->next = list1.mHeader;
         list1.mHeader->prev = n1->prev;
