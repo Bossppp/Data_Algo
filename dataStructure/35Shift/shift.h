@@ -1,6 +1,6 @@
 void shift(int k) {
 	//handle -k
-	while(k<0){
+	if(k<0){
 		k+= mSize;
 	}
 	k %= mSize;

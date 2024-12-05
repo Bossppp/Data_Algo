@@ -335,7 +335,7 @@ void genBestrecur(int start,int end,CP::map_bst<int,int> &best){
   if(start > end) return;
   //make a root
   int midr = (start+end)/2;
-  best[midr] = 0;
+  best[midr] = 0; //best tree need have midval as root
 
   genBestrecur(start,midr-1,best); //gen the left
   genBestrecur(midr+1,end,best); //gen the right
